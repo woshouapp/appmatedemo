@@ -8,18 +8,15 @@
 
 enum UpdateFlag
 {
-	UF_NONE = 0,//²»ĞèÒªÉı¼¶
-	UF_FORCE = 1,//Ç¿ÖÆÉı¼¶
-	UF_SILENT = 2,//¾²Ä¬Éı¼¶
-	UF_OPTION = 3,//¿ÉÑ¡Éı¼¶
+	UF_NONE = 0,//ä¸éœ€è¦å‡çº§
+	UF_FORCE = 1,//å¼ºåˆ¶å‡çº§
+	UF_SILENT = 2,//é™é»˜å‡çº§
+	UF_OPTION = 3,//å¯é€‰å‡çº§
 };
 
 class CUpdateCallback
 {
 public:
-	//CUpdateCallback();
-	//~CUpdateCallback();
-
 	virtual void OnCheckResult(int nUpdateFlag, const char* szVersion
 		, const char* szVersionDescription, bool bManual) = 0;
 
@@ -28,26 +25,12 @@ public:
 	virtual void OnDownloadFinish(int nTipLevel) = 0;
 };
 
-//
-//#ifdef __cplusplus
-//extern "C"{
-//#endif
-//
 APPMATE_API void AppMate_Init(const char* szAppID, CUpdateCallback* pUpdateCallback);
-	//, const char* szVersion = nullptr);//ÒªÔÊĞíÓ¦ÓÃ×Ô¼º´«°æ±¾ºÅ£¬ÒòÎª²»Ò»¶¨ÒÔµ±Ç°exeµÄ°æ±¾ºÅÎª×¼
 
 APPMATE_API void AppMate_UnInit();
 
-//Ö»ÓĞÒ»¸öÅäÖÃÎÄ¼ş£¬¼´Éı¼¶ĞÅÏ¢
-//Ö»ÓĞÒ»Ìõ¼ÇÂ¼£¬¾Í²»ÓÃÊı¾İ¿âÁË
 APPMATE_API void AppMate_CheckUpdate();
 
-APPMATE_API void AppMate_UpdateNext();//ÏÂÒ»²½
+APPMATE_API void AppMate_UpdateNext();
 
-//////////////////////////////////////////////////////////////////////////
 APPMATE_API void AppMate_Report(const char* szEvent, const char* szValue);
-
-//
-//#ifdef __cplusplus
-//};
-//#endif
