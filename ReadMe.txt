@@ -4,7 +4,7 @@
 沃手应用伴侣sdk集成
 
 一、获取AppKey
-请先到沃手应用伴侣官网（http://www.woshouapp.com/）中注册账号，登录可添加新应用，添加完成后系统会自动生成AppKey。
+请先到沃手应用伴侣官网（http://www.woshouapp.com/ ）中注册账号，登录可添加新应用，添加完成后系统会自动生成AppKey。
 二、配置文件
 按VC项目配置，把AppMate的头文件appmate.h及库文件appmatedll.lib所在路径添加到相应配置中，即可使用接口，运行时把AppMate的dll文件appmate.dll和exe文件appmate.exe放到运行目录中，appmate.exe是升级时替换文件所需。
 三、接口说明
