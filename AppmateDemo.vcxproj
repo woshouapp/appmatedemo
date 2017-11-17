@@ -128,9 +128,6 @@
     <ResourceCompile Include="AppmateDemo.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\AppmateDemo.rc2" />
-  </ItemGroup>
-  <ItemGroup>
     <Image Include="res\AppmateDemo.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
